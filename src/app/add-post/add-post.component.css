@@ -1,0 +1,33 @@
+#add-post {
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 10px;
+	width: 80%;
+	margin: 25px auto;
+}
+
+
+.form-line {
+	width: 100%;
+	clear: both;
+	box-sizing: border-box;
+	font: 18px/1.2 'Open Sans', Tahoma, Verdana, sans-serif;
+}
+
+.post-title {
+	position: relative;
+	padding-bottom: 10px;
+}
+.post-title label {
+	position: absolute;
+	left: 7px;
+	top: 5px;
+	font-style: italic;
+	color: rgba(20,20,20,.5);
+}
+
+.post-title input {
+	width: 100%;
+	font: 1.3em/1.5 'Open Sans', Georgia, Tahoma, sans-serif;
+	text-indent: 45px;
+}

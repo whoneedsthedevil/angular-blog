@@ -1,0 +1,17 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "Start JSON-server",
+      "author": "Pasha Abramov",
+      "post": "a lot of texts",
+      "likes": 3,
+      "labels": [
+        "initiale",
+        "welcome"
+      ],
+      "color": "grey",
+      "date": "12.12.2017"
+    }
+  ]
+}

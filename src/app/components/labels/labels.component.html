@@ -1,0 +1,14 @@
+<div class="multi-label">
+	<div class="labels-input">
+		<input (keyup.enter)="addLabel(label)" #label />
+		<button class="sbmt" (click)="addLabel(label)">Add label</button>
+	</div>
+	<div class="labels-box" *ngIf="labels.length > 0">
+		<div class="label" *ngFor="let label of labels; let i = index;"> 
+			{{label}} 
+			<span (click)="removeLabel(i)"> 
+				<i class="fa fa-times" aria-hidden="true"></i> 
+			</span> 
+		</div>
+	</div>
+</div>

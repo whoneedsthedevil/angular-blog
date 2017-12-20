@@ -1,0 +1,29 @@
+h1 {
+	font: 40px/1.5 'Open Sans', Tahoma, Verdana;
+	text-align: center;
+	font-style: italic;
+}
+
+nav {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+}
+
+nav a {
+	text-decoration: none;
+	color: #111;
+	font-size: 1.5em;
+	outline: none;
+}
+
+nav a:hover {
+	color: red;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+}

@@ -1,0 +1,17 @@
+
+<form id="add-post">
+	<div class="form-line post-title">
+		<label for="title">post</label>
+		<input #title placeholder="Title" name="title">
+	</div>
+
+	<froala-component #post> Loading text editor </froala-component>
+
+	<div class="form-line">
+		<post-labels #labelsInput></post-labels>
+	</div>
+
+	<div class="form-line">
+		<button class="add-sbmt" (click)="addPost(title.value, post.value, labelsInput.labels)">submit</button>
+	</div>
+</form>

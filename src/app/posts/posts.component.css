@@ -1,0 +1,13 @@
+.post-cnt {
+	width: 400px;
+	margin: 10px auto;
+	padding-top: 15px;
+}
+.post-cnt > div {
+	border-top: 2px solid #235;
+}
+
+.selected {
+	border: 1px solid black;
+	background: rgba(13,0,170,.6);
+}
