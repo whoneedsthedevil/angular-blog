@@ -1,18 +1,14 @@
-<div>
-  <label>Hero name:
-    <input #heroName />
-  </label>
-  <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(heroName.value); heroName.value=''">
-    add
-  </button>
+<div class="container">
+  <h3>Post titles:</h3>
+  <ul class="posts-list">
+    <li *ngFor="let post of posts">
+      <a routerLink="/detail/{{post.id}}">
+        <span class="badge">{{post.id}}</span> {{post.name}}
+      </a>
+      <button class="delete" title="delete post"
+        (click)="delete(post)">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+    </li>
+  </ul>
 </div>
-<ul class="heroes">
-  <li *ngFor="let hero of posts">
-    <a routerLink="/detail/{{hero.id}}">
-      <span class="badge">{{hero.id}}</span> {{hero.name}}
-    </a>
-    <button class="delete" title="delete hero"
-    (click)="delete(hero)">x</button>
-  </li>
-</ul>

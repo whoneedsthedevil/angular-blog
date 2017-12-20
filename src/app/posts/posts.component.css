@@ -1,13 +1,21 @@
-.post-cnt {
-	width: 400px;
+.container {
+	width: 80%;
 	margin: 10px auto;
 	padding-top: 15px;
 }
-.post-cnt > div {
-	border-top: 2px solid #235;
+h3 {
+	font-family: 'Open Sans', sans-serif;
 }
-
-.selected {
-	border: 1px solid black;
-	background: rgba(13,0,170,.6);
+.posts-list {
+	list-style: none;
+	padding: 5px;
+}
+.posts-list li .badge {
+	color: black;
+}
+.posts-list li a {
+	outline: none;
+	color: #6eafc5;
+	text-decoration: none;
+	padding-right: 1em;
 }
