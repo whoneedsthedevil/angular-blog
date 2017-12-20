@@ -1,4 +1,30 @@
 /* MessagesComponent's private CSS styles */
+.messages-alert {
+  display: none;
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  width: 250px;
+  height: 100px;
+  background: #f5d5f5;
+  opacity: 0;
+}
+.messages-alert.active {
+  display: flex;
+  animation: alert-in 2.5s ease-in-out forwards;
+}
+@keyframes alert-in {
+    0% {opacity: 0;}
+    15% {opacity: 1;}
+    80% {opacity: 1;}
+    99% {opacity: 0;}
+}
+
+.messages-alert.active > div {
+  margin: auto;
+  text-align: center;
+}
+
 h2 {
   color: red;
   font-family: Arial, Helvetica, sans-serif;
